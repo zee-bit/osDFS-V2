@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="css/loadingAnimation.css">
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
 
@@ -45,6 +45,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+  <!-- Loading Animation -->
+  <div id="loaderAnim">
+    <div class="boxes">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!--End loading Animation-->
+  
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container-fluid px-lg-5">
@@ -94,7 +125,7 @@
                 <h2 class="mb-4">OSDFS</h2>
                 <p>A special interest group that supports women and men who study or are interested in Computer and
                   Information Science.</p>
-                <p><a href="https://docs.google.com/forms/d/1Sec3zIrbFimSQc5TT9bXdmpa0mKEgNbqrfQiEC8K4SY/"
+                <p><a href="team_form.html"
                     target="_blank" rel="noopener" class="btn btn-primary py-3 px-4">Join now</a></p>
               </div>
             </div>
@@ -175,7 +206,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 heading-section text-center ftco-animate">
-          <h2 class="mb-0"><a href="https://docs.google.com/forms/d/1Sec3zIrbFimSQc5TT9bXdmpa0mKEgNbqrfQiEC8K4SY/"
+          <h2 class="mb-0"><a href="team_form.html"
               target="_blank" rel="noopener">Join Us</a></h2>
         </div>
       </div>
@@ -196,8 +227,7 @@
             <div class="icon"><span class="flaticon-open-book"></span></div>
             <div class="media-body">
               <h3 class="heading mb-3">YouthIcon</h3>
-              <p>Let's put Asia, Europe, North America, South America and Australia on NLP map. A living collection of
-                NLP projects for Asians, by Asians.</p>
+              <p>Let's put India on NLP map. YouthIcon as the name suggest will be a research effort for NLP for Indian languages that is LOW RESOURCED, OPEN SOURCE, CONTRY-WIDE, DISTRIBUTED and ONLINE. </p>
               <p><a href="https://github.com/osDFS/YouthIcon" target="_blank" rel="noopener"
                   class="btn btn-primary py-3 px-4">Join</a></p>
             </div>
@@ -399,6 +429,7 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/scroll-to-top.js"></script>
+  <script src="js/removingLoader.js"></script>
 </body>
 
 </html>
