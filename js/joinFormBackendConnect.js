@@ -1,3 +1,4 @@
+url = "https://osdfsbackend.herokuapp.com";
 $("#submit").click(function () {
   var first_name = $("#first_name").val();
   var last_name = $("#last_name").val();
@@ -25,13 +26,8 @@ $("#submit").click(function () {
   else if (team == "") return;
   else {
     $.ajax({
-      url: "https://osdfsbackend.herokuapp.com/newUserEntry",
+      url: url + "/newUserEntry",
       method: "POST",
-      contentType: "application/json",
-      secure: true,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
       data: {
         userName: name,
         userEmail: email,
@@ -51,7 +47,7 @@ $("#submit").click(function () {
           $("#message").text(res.message);
           setTimeout(function () {
             window.location.reload(true);
-          }, 2000);
+          }, 8000);
         } else if (res.status === 200) {
           console.log(res);
           $("#message").text(res.message);
