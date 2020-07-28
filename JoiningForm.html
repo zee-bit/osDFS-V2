@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Join Us</title>
 
-  
+
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/JoiningForm.css">
 </head>
+
 <body>
 
     <div class="main">
@@ -17,7 +19,7 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                  <img src="images/assets/bg_form.jpg" class="img-fluid"/>
+                    <img src="images/assets/bg_form.jpg" class="img-fluid" />
                     <div class="signup-img-content">
 
                         <h2>Join Us </h2>
@@ -25,44 +27,45 @@
                     </div>
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+                    <form class="register-form" id="register-form" onsubmit="event.preventDefault()">
                         <div class="form-row">
                             <div class="form-group">
                                 <div class="form-input">
                                     <label for="first_name" class="required">First name</label>
-                                    <input type="text" name="first_name" id="first_name" />
+                                    <input type="text" name="first_name" id="first_name" required />
                                 </div>
                                 <div class="form-input">
-                                    <label for="last_name" >Last name</label>
-                                    <input type="text" name="last_name" id="last_name" />
+                                    <label for="last_name" class="required">Last name</label>
+                                    <input type="text" name="last_name" id="last_name" required />
                                 </div>
                                 <div class="form-input">
                                     <label for="company" class="required">University name</label>
-                                    <input type="text" name="University" id="University" />
+                                    <input type="text" name="University" id="university" required />
                                 </div>
                                 <div class="form-input">
                                     <label for="email" class="required">Email</label>
-                                    <input type="text" name="email" id="email" />
+                                    <input type="email" name="email" id="email" required />
                                 </div>
                                 <div class="form-input">
                                     <label for="phone_number" class="required">Phone number</label>
-                                    <input type="text" name="phone_number" id="phone_number" />
+                                    <input type="text" name="phone_number" id="phone_number" required />
                                 </div>
                             </div>
                             <div class="form-group">
-
-                                  <div class="form-input">
+                                <div class="form-input">
                                     <label for="company" class="required">Current City</label>
-                                    <input type="text" name="City" id="City" />
+                                    <input type="text" name="City" id="city" required />
                                 </div>
 
                                 <div class="form-select">
                                     <div class="label-flex">
-                                        <label  class="required" for="team">Team Select</label>
-                                        <a href="https://drive.google.com/file/d/17wErDB3Xqwx2OJChfcJhztG1Orns593P/view?usp=sharing" class="form-link">Team Details</a>
+                                        <label class="required" for="team">Team Select</label>
+                                        <a href="https://drive.google.com/file/d/17wErDB3Xqwx2OJChfcJhztG1Orns593P/view?usp=sharing"
+                                            class="form-link">Team Details</a>
                                     </div>
                                     <div class="select-list">
-                                        <select name="team" id="team">
+                                        <select id="team" required>
+                                            <option value="" class="selected">None</option>
                                             <option value="option1">Web Team</option>
                                             <option value="option2">Content Team</option>
                                             <option value="option3">Design Team</option>
@@ -73,35 +76,42 @@
                                         </select>
                                     </div>
                                 </div>
-                          
+
                                 <div class="form-input">
-                                    <label  class="required" for="Github">Github Profile</label>
-                                    <input type="text" name="gitub" id="github" />
+                                    <label class="required" for="Github">Github Profile</label>
+                                    <input type="text" name="gitub" id="github" required />
                                 </div>
                                 <div class="form-input">
-                                    <label  class="required" for="linkedin">LinkedIn Profile</label>
-                                    <input type="text" name="linkedin" id="linkedin" />
+                                    <label class="required" for="linkedin">LinkedIn Profile</label>
+                                    <input type="text" name="linkedin" id="linkedin" required />
                                 </div>
                                 <div class="form-input">
-                                    <label class="required" for="question">Can You Lead OSDFS in your Campus?</label>
-                                    <input type="text" name="question" id="question" />
+                                    <label class="required" for="question">Can You Lead OSDFS in your Campus? (Yes /
+                                        No)</label>
+                                    <input type="text" name="question" id="question" required />
+
                                 </div>
                             </div>
                         </div>
-                      <div class="form-input">
-                         <label class="required" for="file">CV</label>
+                        <div class="form-input">
+                            <label class="required" for="file">CV</label>
+                            <input type="text" name="cv" id="cv" required />
                             <div class="value">
-                                <div class="input-group js-input-file">
+                                <!-- <div class="input-group js-input-file">
                                     <input class="input-file" type="file" name="file_cv" id="file">
                                     <label class="label--file" for="file">Choose file</label>
-                                
-                                </div>
-                                <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+                                </div> -->
+                                <div class="label--desc">Give a drive link to your resume </div>
                             </div>
                         </div>
+
                         <div class="form-submit">
                             <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
-                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                            <input type="reset" value="Reset" class="submit" id="reset" name="reset" />
+                        </div>
+                        <br />
+                        <div>
+                            <h3 id="message" style="color: black;text-align: center;"></h3>
                         </div>
                     </form>
                 </div>
@@ -110,10 +120,10 @@
 
     </div>
 
-   
-    <script src="js/scripts/jquery.min.js"></script>
-    
 
+    <script src="js/scripts/jquery.min.js"></script>
+    <script src="js/joinFormBackendConnect.js"></script>
     <script src="js/JoiningForm.js"></script>
 </body>
+
 </html>
