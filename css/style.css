@@ -75,16 +75,27 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 #back-to-top {
   display: none;
   position: fixed;
-  border-radius: 60px;
+  border-radius: 100%;
   background-color: #f1f1f1;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.24), 0 1px 1px -1px rgba(0,0,0,.24), 0 1px 5px 0 rgba(0,0,0,.22);
   bottom: 25px;
   right: 25px;
-  height: 58px;
+  height: 55px;
 }
 
 #back-to-top:hover {
   background-color: #d1d1d1;
+}
+
+.social-icons {
+  width: 40% !important;
+  opacity: 0.8 !important;
+  text-align: start !important;
+  top: -6rem;
+}
+
+.icons {
+  color: white;
 }
 
 body {
