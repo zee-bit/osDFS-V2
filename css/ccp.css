@@ -20,10 +20,10 @@ color: #0000FF;
 
 
 .content {
-  width: 80%;
+  width: 90%;
   padding: 20px;
   margin: 0 auto;
-  padding: 0 60px 0 0;
+  padding: 0 20px 0 0;
 }
 
 .centerplease {
@@ -46,7 +46,7 @@ color: #0000FF;
 .answers {
   font-weight:300;
   background: #f2f2f2;
-  padding: 0px 15px;
+  padding: 0px 0px;
   margin: 0px 0;
   height: 0;
   overflow: hidden;         
@@ -62,7 +62,7 @@ color: #0000FF;
 .questions:checked ~ .answers{
   height: auto;
   opacity: 1;
-  padding: 15px;
+  padding: 10px;
 }
 
 .plus {
