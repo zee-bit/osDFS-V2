@@ -45,12 +45,14 @@ $("#submit").click(function () {
         if (res.status !== 200) {
           console.log(res);
           $("#message").text(res.message);
+          alert(res.message);
           setTimeout(function () {
             window.location.reload(true);
           }, 8000);
         } else if (res.status === 200) {
           console.log(res);
           $("#message").text(res.message);
+          alert(res.message);
         }
       },
       error: function (err) {
